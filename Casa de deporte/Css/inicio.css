@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+}
+header{
+    color: blanchedalmond;
+    background-color: black;
+}
+.contenedor {   /* navegador */
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            list-style: none;
+
+}
+.contenedor a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 15px 15px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border-radius: 1px;
+}
+
+.menu ul li a:hover { 
+    background-color: chocolate;
+}
+
+.productos{/* tarjeta con imagenes */
+    width: 350px;
+    height: 600px;
+    margin-left: 200px;
+    padding: auto;
+    position: static;
+    display: inline-block;
+}
+
+.productos h4{
+margin-top: 20px;
+font-size: 28px;
+color: #262626;
+margin-bottom: 15px;
+font-weight: 600px;
+text-align: center;
+}
+.productos p{
+    padding: 15px 30px 25px;
+}
+.productos img{
+    display: inline-flex;
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+}
+.productos a{
+    color:black;
+    background-color: aqua;
+    font-weight: 600px;
+    font-size: 16px;
+    padding: 13px 20px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin-left: 130px;
+    text-decoration: none;
+
+}
+.productos a:hover{
+    background-color: deeppink ;
+    color: #fff;
+
+}
+.tarjetas{
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.tarjetas .productos{
+    transition: transform 0.4s ease-in-out;
+}
+.tarjetas .productos:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+/* Conjuntos/prendas */
+
+.informacion {
+    border-style: solid;
+    border-color:5px black;
+    display: flex;
+    background-color: burlywood;
+}
+.informacion img{
+  width: 500px;
+  height: 300px;
+}
+.texto {
+padding: 3%;
+text-align: justify;
+}
+.texto h3{
+    text-align: center;
+}
+.texto a{
+    color: black;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    margin: 47.5%;
+    padding: 5px 10px;
+}
+.texto a:hover{
+    background-color: deeppink ;
+    color: #fff;
+
+}
+.img{
+ position: solid;
+ padding: 1%;
+ margin-top: 2%;
+}
+/* inicio del footer */
+.footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    
+}
+.footer-izquierda {
+margin: 20px 0 0 150px;
+}
+.footer-izquierda ul li{
+    list-style: none;
+    margin: 0 0 15px -30px;
+}
+.footer-izquierda ul li a{
+text-decoration: none;
+color: white;
+}
+.footer-centro {
+margin: 20px 0 0 300px;
+}
+.footer-centro ul li{
+    list-style: none;
+    margin: 0 0 15px -30px;
+}
+.footer-derecha {
+    margin: 20px 0 0 200px;
+}
+.footer-abajo {
+    margin-left: -650px;
+    margin-top: 400px;
+}
